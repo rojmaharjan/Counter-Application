@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.dark button{
+  margin-left: 1000px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.main, .timer {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .main, .dark-mode .timer {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.counter{
+  margin-left: 70px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #383535;
+  color: #ffffff;
+}
+
+.dark-mode .theme-toggle {
+  background-color: wheat;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button:nth-child(1) {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button:nth-child(2) {
+  background-color: #ffc107;
+  color: #000;
+}
+
+button:nth-child(3) {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main, .timer {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main, .timer {
+    width: 90%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+}
